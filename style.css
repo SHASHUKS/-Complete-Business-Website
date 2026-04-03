@@ -1,0 +1,208 @@
+/* ================== RESET ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ================== BODY ================== */
+body {
+    background-color: #06cdfe;
+    color: white;
+}
+
+/* ================== NAVIGATION ================== */
+nav {
+    background-color: #000000;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(0, 255, 21);
+}
+
+/* ================== HOME PAGE ================== */
+.home-container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.left-side {
+    flex: 1;
+    background-image: url("images/full.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.right-side {
+    flex: 1;
+    background-image: url("images/view.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(31, 238, 16);
+    padding: 25px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    color: black;
+}
+
+/* ================== ABOUT PAGE ================== */
+.about-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    text-align: center;
+}
+
+.about-container img {
+    width: 600px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-box {
+    background-color: rgb(217, 0, 255);
+    color: white;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+/* ================== MENU PAGE ================== */
+.page-title {
+    text-align: center;      /* Centers text horizontally */
+    margin-top: 50px;        /* Space from top */
+    margin-bottom: 40px;     /* Space before menu items */
+    font-size: 42px;         /* Bigger size */
+    color: rgb(39, 0, 7);           /* Title color */
+}
+.menu-container {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.menu-item {
+    background: white;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ================== CONTACT PAGE ================== */
+.contact-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box {
+    background-color: #250303;
+    padding: 60px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    text-align: left;
+    line-height: 2;
+}
+
+/* ================== BOOKING PAGE ================== */
+.booking-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-box {
+    background-color: #0011ff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.booking-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-box label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.booking-box input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.booking-box button {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(4, 255, 0);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.booking-box button:hover {
+    background-color: rgb(242, 0, 255);
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+
+    .home-content {
+        width: 80%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
